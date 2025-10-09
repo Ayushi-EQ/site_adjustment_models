@@ -36,7 +36,7 @@ dS2Serr_all         = dS2Serr_all.iloc[:,6:]
 dS2Ssitedf          = pd.read_csv(Path(r"C:\Users\ati47\OneDrive - University of Canterbury\Desktop\PhD\10. Research\Objective 1\9. Model development\Correlation\PJSreStationBiased_sim_TableauTest.csv"))
 out_dir             = Path(os.path.join(os.getcwd(),"Unmodelled basins","Final Basin Model_Draft 2"))
 #%% LOWESS function define
-def loess(x, y, f):
+def loess(x, y, f):  # adapted from https://james-brennan.github.io/posts/lowess_conf/
     """
     Basic LOWESS smoother with uncertainty. 
     Note:

@@ -35,7 +35,7 @@ dS2Ssitedf          = pd.read_csv(Path(r"C:\Users\ati47\OneDrive - University of
 # out_dir             = Path(os.path.join(os.getcwd(),"Model Diagnostics","ModelsBasinSites","Anydependency"))
 out_dir = Path(r'C:\Users\ati47\OneDrive - University of Canterbury\Desktop\PhD\10. Research\Journal papers\Paper 1\Figures\Figure Outputs\Residual analysis')
 #%% LOWESS function define
-def loess(x, y, f):
+def loess(x, y, f): # adapted from https://james-brennan.github.io/posts/lowess_conf/
     """
     Basic LOWESS smoother with uncertainty. 
     Note:

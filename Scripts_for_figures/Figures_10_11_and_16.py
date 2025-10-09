@@ -220,7 +220,7 @@ ax[1][0].set_xlabel('$H_{1250}$ (m)', size=20)
 ax[1][1].set_xlabel('$H_{1250}$ (m)', size=20)
 plt.savefig(os.path.join(out_dir,"SampleModelBootstrapping.pdf"))
 #%% LOWESS function define
-def loess(x, y, f):
+def loess(x, y, f):  # adapted from https://james-brennan.github.io/posts/lowess_conf/
     """
     Basic LOWESS smoother with uncertainty. 
     Note:
