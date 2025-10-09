@@ -25,7 +25,8 @@ The repository is organized into modular components reflecting the workflow used
 This folder contains scripts for calculating the site adjustment factors.
 
 ##
-- `models.py`:  The code for calculating the site adjustment factors. It requires `python>=3.11`, `pandas` and `numpy`. The implemented functions are extensively documented, and contain examples and test cases. The - `test_models.py`: Test cases are provided to test the functions against values from an independent implementation for the results providing the figures in the paper. You can run the tests from the root of this repository like so,
+- `models.py`:  The code for calculating the site adjustment factors. It requires `python>=3.11`, `pandas` and `numpy`. The implemented functions are extensively documented, and contain examples and test cases.
+-  `test_models.py`: Test cases are provided to test the functions against values from an independent implementation for the results providing the figures in the paper. You can run the tests from the root of this repository like so,
 
 ``` shell
 $ python site_adjustment_models/test_models.py
