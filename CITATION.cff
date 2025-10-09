@@ -1,0 +1,86 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Parameterized models of systematic site effects from
+  hybrid ground-motion simulations in New Zealand
+message: >-
+  This dataset provides the required scripts and datasets
+  for producing models shown in the paper and for
+  application of these models to other regions.
+type: dataset
+authors:
+  - given-names: Ayushi
+    family-names: Tiwari
+    email: ayushi.tiwari@pg.canterbury.ac.nz
+    name-particle: Ayushi
+    affiliation: University of Canterbury
+    orcid: 'https://orcid.org/0000-0002-8713-0881'
+  - given-names: Brendon
+    family-names: Bradley
+    email: brendon.bradley@canterbury.ac.nz
+    name-particle: Brendon
+    affiliation: University of Canterbury
+    orcid: 'https://orcid.org/0000-0002-4450-314X'
+  - given-names: Christopher
+    family-names: de la Torre
+    email: christopher.delatorre@canterbury.ac.nz
+    name-particle: Christopher
+    affiliation: University of Canterbury
+    orcid: 'https://orcid.org/0000-0002-7946-7812'
+  - given-names: Robin
+    family-names: Lee
+    email: robin.lee@canterbury.ac.nz
+    name-particle: Robin
+    affiliation: University of Canterbury
+    orcid: 'https://orcid.org/0000-0003-1033-5923'
+  - given-names: Cesar
+    family-names: Pajaro
+    email: cesar.pajaromiranda@canterbury.ac.nz
+    name-particle: Cesar
+    affiliation: University of Canterbury
+    orcid: 'https://orcid.org/0000-0002-0019-789X'
+abstract: >-
+  This article analyzes site-to-site residuals from
+  physics-based ground-motion simulations, which contribute
+  significantly to the uncertainty in ground-motion
+  modeling, and develops parametric site adjustment models
+  for use with these simulations. Residuals are computed for
+  5,218 ground motions from 479 small-magnitude ($3.5 \leq
+  M_W \leq 5.0$) earthquakes recorded at 212 sites across
+  New Zealand, spanning diverse site conditions.
+  Site-to-site residuals are analyzed via both geomorphic
+  categorization and other physical site characterization
+  parameters, as well as with data-driven clustering
+  methods. 
+
+  Hill site residuals exhibit the highest category standard
+  deviations, $\phi_{S2S,cat}$, at short vibration periods,
+  and sites in unmodeled sedimentary basins are the highest
+  at moderate-to-long periods. Site-to-site residuals for
+  Hill sites exhibit a statistically-significant correlation
+  with relative elevation ($H_{1250}$), while Unmodeled
+  Basin site residuals have a strong dependence on
+  fundamental site period ($T_0$). Parametric adjustment
+  models are developed for site categories with the highest
+  $\phi_{S2S,cat}$ and applied to the simulation results.
+  The resulting `hybrid' empirical-simulation predictions,
+  enabled by these parameterized models, demonstrate
+  significant improvements over the original simulation
+  results, with reductions of up to 30\% in $\phi_{S2S,cat}$
+  for Unmodeled Basin sites, 17.5\% in $\phi_{S2S,cat}$ for
+  Hill sites, and 17\% in overall site-to-site standard
+  deviation, $\phi_{S2S}$. These parametric models
+  illustrate a framework for applying posterior empirical
+  adjustments to `raw' physics-based simulation predictions,
+  and providing a benchmark for further theoretical
+  advancements that seek to explicitly represent missing
+  causal features.
+keywords:
+  - Ground motion simulation
+  - site-to-site residuals
+  - geomorphology classification
+  - sedimentary basin
+  - New Zealand
+license: MIT
