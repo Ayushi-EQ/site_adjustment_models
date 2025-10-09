@@ -5,17 +5,17 @@ models of systematic site effects from hybrid ground-motion
 simulations in New Zealand". The models are provided as a reference
 for calculations made in the paper.
 
-The classifications of hill, valley, basin, unmodeled basin, and
-basin edge are defined in the referenced paper.
+The classifications of hill, valley, basin edge, basin, and unmodeled basin
+ are defined in the referenced paper.
 
 Functions
 ---------
 site_adjustment_hill
-    Site adjustment factor calculations for hill sites. Requires both
-    a period (seconds) and an H1250 value (m).
-site_adjustment_UNMODELED_BASIN
+    Site adjustment factor calculations for hill sites. Requires 
+    period (seconds) and H1250 value (m).
+site_adjustment_unmodeled_basin
     Site adjustment factor calculations for unmodeled basin sites.
-    Requires both period (seconds) and fundamental period T0 (seconds).
+    Requires period (seconds) and fundamental period T0 (seconds).
 site_adjustment_basin_edge
     Site adjustment factor calculations for basin edge sites.
     Requires period (seconds)
@@ -42,7 +42,15 @@ COEFFICIENT_TABLE = pd.read_csv( Path(__file__).parent / "data" / "Coefficients_
 def _closest_coefficients_for_period(
     period: npt.ArrayLike, coefficient: str
 ) -> npt.NDArray[np.float64]:
-    """Find the closest defined coefficient for a given period.
+    """
+    Find the closest defined coefficient for a given period.
+
+    ...
+
+    Notes
+    -----
+    Linear interpolation is not implemented at periods where the models are not defined. 
+    Users may interpolate outputs at intermediate periods if desired.
 
     Given a period (p) and a coefficient, lookup the first row i in
     the coefficient table such that ``p[i - 1] < p <= p[i]``. Then,
@@ -59,13 +67,19 @@ def _closest_coefficients_for_period(
     Returns
     -------
     npt.NDArray[np.float64]
-        The coefficient value(s) for the given period(s).
+        Coefficient value(s) corresponding to the given period(s).
 
     Examples
     --------
     >>> _closest_coefficients_for_period([0.01, 0.2 + 1e-6], 'h1')
     (array([0.01, 0.2 ]), array([0.        , 0.00569733]))
+    
+    Raises
+    ------
+    ValueError
+    If any period is not within `0.05` seconds of a period provided.
     """
+    
     period = np.asarray(period)
     coefficients = COEFFICIENT_TABLE[coefficient]
     idx_right = np.searchsorted(coefficients.index.values, period, side="left")
@@ -75,7 +89,7 @@ def _closest_coefficients_for_period(
     right_diff = np.abs(coefficients.index.values[idx_right] - period)
     idx = np.where(left_diff < right_diff, idx_left, idx_right)
     selected_periods = coefficients.index.values[idx]
-    if not np.allclose(selected_periods, period, atol=1e-6):
+    if not np.allclose(selected_periods, period, atol=0.05):
         raise ValueError(f'Periods not supported: {period=}, {selected_periods=}.')
     return selected_periods, coefficients.values[idx]
 
@@ -83,16 +97,15 @@ def _closest_coefficients_for_period(
 def site_adjustment_hill(period: npt.ArrayLike, h_1250: npt.ArrayLike) -> npt.ArrayLike:
     """Calculate site adjustment factors for hill sites.
 
-    This implements Equation 6 for Hill sites.
+    This implements Equation 6 for such sites.
 
     Parameters
     ----------
     period : npt.ArrayLike
-        The period(s) to calculate the site adjustment factors for.
+        The period(s) at which to calculate the site adjustment factors.
     h_1250 : npt.ArrayLike
-        The H1250 value for the given site. H1250 is defined as the
-        difference between site elevation, and mean elevation of the
-        DEM in a diameter of 1250m.
+        The H1250 value for the site. H1250 is defined as the difference between the site elevation
+        and the mean elevation of the DEM within a 1250 m diameter.
 
 
     Returns
@@ -115,20 +128,19 @@ def site_adjustment_hill(period: npt.ArrayLike, h_1250: npt.ArrayLike) -> npt.Ar
     )
 
 
-def site_adjustment_UNMODELED_BASIN(
+def site_adjustment_unmodeled_basin(
     period: npt.ArrayLike, t0: npt.ArrayLike
 ) -> npt.ArrayLike:
-    """Calculate site adjustment factors for unmodeled basins.
+    """Calculate site adjustment factors for sites in unmodeled basins.
 
-    This function implements equations 7 and 8 for sites in unmodeled
-    basins.
+    This function implements Equations 7 and 8 for such sites.
 
     Parameters
     ----------
     period : npt.ArrayLike
-        The period(s) to calculate adjustment factors for.
+        The period(s) to calculate adjustment factors.
     t0 : npt.ArrayLike
-        The fundamental period at the site in the unmodeled basin.
+        The fundamental period of the site.
 
     Returns
     -------
@@ -137,7 +149,7 @@ def site_adjustment_UNMODELED_BASIN(
 
     Examples
     --------
-    >>> site_adjustment_UNMODELED_BASIN([0.1, 0.2, 0.5, 2.0], 1.5)
+    >>> site_adjustment_unmodeled_basin([0.1, 0.2, 0.5, 2.0], 1.5)
     array([0.        , 0.        , 0.        , 0.36025334])
     """
     _, m1 = _closest_coefficients_for_period(period, "m1")
@@ -156,19 +168,19 @@ def site_adjustment_UNMODELED_BASIN(
 def site_adjustment_basin_edge(period: npt.ArrayLike) -> npt.ArrayLike:
     """Site adjustment factor calculations for basin edge sites.
 
-    This function linearly interpolates values in the 'mean' column of
-    the coefficients table. A subset of this table is present in Table 2.
+    This function gets values from the 'mean' column of
+    the coefficients table. A subset of this table is shown in Table 2 of the referenced paper.
 
     Parameters
     ----------
     period : npt.ArrayLike
-        The period(s) to calculate adjustment factors for.
+        The period(s) to calculate adjustment factors.
 
 
     Returns
     -------
     npt.ArrayLike
-        The adjustment factors for the give period(s).
+        The adjustment factors for a given period(s).
 
     Examples
     --------
@@ -199,7 +211,7 @@ def site_adjustment(
     Parameters
     ----------
     site_class : SiteClass
-        The site geomorphological class.
+        The site geomorphic class.
     period : npt.ArrayLike
         The period(s) to calculate for.
     t0 : npt.ArrayLike | None
@@ -226,15 +238,22 @@ def site_adjustment(
     array([0., 0., 0.])
     >>> site_adjustment(SiteClass.VALLEY, 0.1)
     array(0.)
+    
+    Raises
+    ------
+    ValueError
+    If required inputs for site classes are not provided. This
+    means `t0` is not provided for ``site_class == SiteClass.UNMODELED_BASIN`` or `h_1250` is not provided when ``site_class == SiteClass.HILL``.
     """
+    
     match site_class:
         case SiteClass.UNMODELED_BASIN:
             if t0 is None:
-                return ValueError("T0 must be supplied for unmodeled basin sites.")
-            return site_adjustment_UNMODELED_BASIN(period, t0)
+                raise ValueError("T0 must be supplied for unmodeled basin sites.")
+            return site_adjustment_unmodeled_basin(period, t0)
         case SiteClass.HILL:
             if h_1250 is None:
-                return ValueError("H1250 must be supplied for hill basin sites.")
+                raise ValueError("H1250 must be supplied for hill sites.")
             return site_adjustment_hill(period, h_1250)
         case SiteClass.BASIN_EDGE:
             return site_adjustment_basin_edge(period)

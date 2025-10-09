@@ -8,7 +8,7 @@ import pandas as pd
 import models
 
 ADJUSTMENT_FACTORS = pd.read_csv( Path(__file__).parent / "data" / "Adjfactor.csv").set_index("stat_id")
-SITES = pd.read_csv(Path(__file__).parent / "data" / "stations.csv").set_index( "stat_id")
+SITES = pd.read_csv(Path(__file__).parent / "data" / "sites.csv").set_index( "stat_id")
 
 
 class TestSiteAdjustmentModels(unittest.TestCase):
@@ -21,16 +21,16 @@ class TestSiteAdjustmentModels(unittest.TestCase):
             h_1250 = station["H1250"]
             t0 = station["T0"]
             basin_type = station["Basin Type"]
-            if basin_type == "Unmodeled Basin":
+            if geomorphology == "Hill":
+                site_class = models.SiteClass.HILL
+            elif basin_type == "Unmodeled Basin":
                 site_class = models.SiteClass.UNMODELED_BASIN
+            elif geomorphology == "Basin Edge":
+                site_class = models.SiteClass.BASIN_EDGE
             elif geomorphology == "Basin":
                 site_class = models.SiteClass.BASIN
-            elif geomorphology == "Hill":
-                site_class = models.SiteClass.HILL
-            elif geomorphology == "Valley":
+            else: # ONLY VALLEY REMAINING
                 site_class = models.SiteClass.VALLEY
-            else:  # Only Basin Edge remaining
-                site_class = models.SiteClass.BASIN_EDGE
 
             for period in periods:
                 correct_adjustment = ADJUSTMENT_FACTORS.loc[stat_id, period]
@@ -50,7 +50,7 @@ class TestSiteAdjustmentModels(unittest.TestCase):
                     err_message = f"Expected {correct_adjustment:.5e} but received {site_adjustment_factor:.5e}, difference of {correct_adjustment - site_adjustment_factor:.5e}."
                     self.assertTrue(
                         np.isclose(
-                            site_adjustment_factor, correct_adjustment, atol=1e-6
+                            site_adjustment_factor, correct_adjustment, atol=1e-7
                         ),
                         msg=err_message,
                     )
