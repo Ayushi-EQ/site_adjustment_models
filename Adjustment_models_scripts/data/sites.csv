@@ -1,0 +1,213 @@
+stat_id,stat_name,Geomorphology,H1250,Basin Type,T0
+1,ADCS,Basin,2.006220217,Type 4 Basin,5.8
+3,AKSS,Hill,-15.23369639,Non-Basin,0.3
+5,AMBC,Basin,-0.265460499,Type 4 Basin,6.2
+6,APPS,Valley,-77.02447217,Unmodeled Basin,0.44
+7,ARKS,Valley,-18.32372175,Type 3 Basin,0.37
+9,ASHS,Basin,-1.38950004,Type 4 Basin,5.46
+14,BFZ,Hill,28.30041106,Non-Basin,0.04
+16,BMTS,Hill,-1.282553007,Non-Basin,0.05
+17,BOWS,Basin Edge,-9.048006802,Type 3 Basin,0.62
+18,BSWZ,Hill,-21.69009833,Non-Basin,0.05
+20,BWHS,Basin,0.267319727,Type 4 Basin,5.5
+21,BWRS,Hill,38.18894609,Non-Basin,0.05
+22,CACS,Basin,0.891590291,Type 4 Basin,6.79
+23,CBGS,Basin,-1.439513718,Type 4 Basin,4.35
+24,CCCC,Basin,1.745118621,Type 4 Basin,2.51
+26,CECS,Basin,-1.340820376,Type 1 Basin,2.2
+27,CHHC,Basin,-3.400750769,Type 4 Basin,2.66
+28,CMHS,Basin,-2.336321901,Type 4 Basin,0.695
+29,CMWZ,Hill,61.98427961,Non-Basin,0.05
+30,COLD,Basin,-0.170989627,Type 4 Basin,5.9
+31,CPFS,Hill,-16.11723631,Non-Basin,0.33
+32,CRLZ,Hill,4.459638562,Non-Basin,0.05
+34,CSHS,Valley,-16.47247441,Unmodeled Basin,1.95
+35,CSTC,Basin,0.752992764,Type 4 Basin,6.04
+36,CUBS,Basin,-9.012552964,Type 3 Basin,0.63
+37,CULC,Basin,0.975437896,Type 1 Basin,2.4
+43,D09C,Basin,4.274859904,Type 4 Basin,
+46,D14C,Hill,50.37307881,Non-Basin,0.05
+48,DALS,Basin,-0.078081892,Type 4 Basin,5.2
+49,DAVS,Basin Edge,-13.98348428,Type 3 Basin,0.6289
+51,DCZ,Hill,-61.54723716,Non-Basin,0.05
+53,DFHS,Basin,0.212016787,Type 4 Basin,5.6
+55,DHSS,Hill,11.85922189,Non-Basin,0.19
+58,DSLC,Basin,-0.131100059,Type 4 Basin,5.6
+59,DSZ,Hill,10.80030693,Non-Basin,0.05
+64,EBPS,Hill,-27.43111213,Non-Basin,0.38
+70,EKTS,Valley,8.760821401,Unmodeled Basin,0.4
+71,EYRS,Basin,-0.034807988,Type 4 Basin,6.2
+73,FAIS,Hill,18.13734526,Non-Basin,0.05
+77,FKPS,Basin Edge,-2.802325991,Type 3 Basin,0.41
+80,FXBS,Basin,-1.256276194,Unmodeled Basin,1.5
+84,GKBS,Hill,-16.20067003,Non-Basin,0.05
+86,GLWS,Valley,-19.53130865,Unmodeled Basin,1
+89,GODS,Hill,55.47276034,Non-Basin,0.05
+91,GOVS,Hill,-24.34510557,Non-Basin,0.28
+94,GVZ,Hill,55.26868048,Non-Basin,0.05
+95,GWTS,Basin,0.338654494,Unmodeled Basin,1.5
+96,HAFS,Basin Edge,-12.66711849,Unmodeled Basin,1.1
+97,HALS,Basin,-0.387684401,Type 4 Basin,4.177
+98,HAVS,Hill,-26.23986484,Non-Basin,0.05
+102,HDWS,Basin,-0.842392426,Unmodeled Basin,0.87
+103,HHSS,Basin,-0.547685316,Type 4 Basin,4.29
+106,HNPS,Basin,0.452552342,Unmodeled Basin,2.65
+107,HOCS,Basin,-0.277515215,Unmodeled Basin,1.8
+109,HPSC,Basin,-0.240621298,Type 4 Basin,5.24
+110,HSES,Basin,2.615114668,Type 1 Basin,0.71
+113,HUNS,Hill,20.50782959,Non-Basin,0.05
+115,HWHS,Hill,0.153312927,Non-Basin,0.6
+118,INGS,Valley,-2.036468385,Unmodeled Basin,0.53
+119,INHS,Hill,0.615737324,Non-Basin,1.5
+121,INZ,Hill,3.366042979,Non-Basin,0.05
+124,KAFS,Basin,-0.409189963,Unmodeled Basin,1.2
+127,KEKS,Hill,59.50964172,Non-Basin,0.05
+130,KHZ,Hill,-30.28349264,Non-Basin,0.05
+131,KIKS,Hill,1.404660325,Non-Basin,0.05
+132,KILS,Basin,1.323192735,Type 4 Basin,5
+133,KIRS,Hill,-32.91128206,Non-Basin,0.43
+136,KOKS,Valley,-0.953133779,Unmodeled Basin,2.2
+137,KOWC,Valley,-2.661315771,Type 4 Basin,0.58
+138,KPOC,Basin,0.066158999,Type 4 Basin,7.1
+140,KVSD,Basin,-0.684206011,Type 4 Basin,6
+143,LHBS,Hill,43.64103524,Non-Basin,0.05
+144,LHES,Basin,0.446806276,Type 3 Basin,1.16
+145,LHRS,Hill,22.75788018,Non-Basin,0.05
+146,LHUS,Basin,0.63010797,Type 3 Basin,1.75
+147,LINC,Basin,-0.131925553,Type 4 Basin,4.36
+149,LNBS,Basin,-0.334770023,Type 3 Basin,0.8
+150,LPCC,Hill,-11.79679929,Non-Basin,0.05
+151,LPLS,Valley,-7.232689264,Unmodeled Basin,0.71
+154,LRSS,Basin,-0.753420877,Type 3 Basin,1.72
+155,LSRC,Basin,-0.453063672,Unmodeled Basin,1
+156,LTZ,Hill,-13.38153414,Non-Basin,0.05
+160,MAVS,Basin,0.708650735,Unmodeled Basin,2.91
+161,MAYC,Basin,-1.001888789,Type 4 Basin,4.5
+162,MCAS,Basin,0.656111943,Unmodeled Basin,1.9
+163,MCNS,Valley,-36.47002686,Unmodeled Basin,0.43
+165,MECS,Valley,3.066807715,Unmodeled Basin,2.85
+166,MENS,Hill,-4.92530467,Non-Basin,0.13
+167,MGCS,Basin,-0.011543416,Type 1 Basin,3.9
+168,MISS,Valley,-8.753994952,Type 3 Basin,1.15
+169,MKBS,Hill,55.78561759,Non-Basin,0.05
+170,MKVS,Hill,7.692459136,Non-Basin,0.17
+174,MNZS,Hill,39.58276281,Non-Basin,0.05
+175,MOLS,Hill,-9.590026953,Non-Basin,0.18
+176,MORS,Basin,-0.168812528,Type 4 Basin,4.3
+179,MPSS,Basin,0.139778382,Type 4 Basin,5.44
+180,MQZ,Hill,-50.05957428,Non-Basin,0.05
+182,MRZ,Hill,-20.27520841,Non-Basin,0.05
+184,MSZ,Hill,7.936547965,Non-Basin,0.05
+187,MTHS,Basin,0.191296289,Type 4 Basin,3.84
+189,MTPS,Hill,62.19558703,Non-Basin,0.05
+191,MWFS,Hill,19.19879427,Non-Basin,0.05
+192,MWZ,Hill,15.26428021,Non-Basin,0.05
+193,MXZ,Hill,24.68367317,Non-Basin,0.05
+196,NBLC,Basin,2.143650386,Type 4 Basin,3.75
+197,NBSS,Basin Edge,-4.515729047,Type 3 Basin,0.9
+199,NCDS,Basin,-0.838314713,Unmodeled Basin,1.1
+200,NCHS,Basin,-0.724464273,Unmodeled Basin,0.865
+201,NELS,Hill,-12.02688224,Non-Basin,0.05
+202,NEWS,Hill,32.15615978,Non-Basin,0.05
+203,NGHS,Hill,14.32049203,Non-Basin,0.187
+204,NLMS,Basin Edge,-4.555007221,Type 1 Basin,0.25
+206,NNBS,Basin,-0.003143333,Type 4 Basin,4.87
+207,NNZ,Hill,-53.37727511,Non-Basin,0.05
+208,NPCS,Hill,13.26462182,Non-Basin,1.3
+209,NSBS,Basin,9.756712397,Unmodeled Basin,1
+210,NSPS,Basin Edge,-7.352289296,Unmodeled Basin,0.186
+211,NWFS,Hill,-25.77129657,Non-Basin,0.05
+215,OHSS,Basin,0.164949826,Type 4 Basin,6.6
+216,OPCS,Basin,-0.141269282,Unmodeled Basin,2.6
+218,OPWS,Basin,-1.633053487,Type 4 Basin,0.85
+222,OTKS,Basin,-0.256836776,Unmodeled Basin,2
+224,OXZ,Hill,-1.697757783,Non-Basin,0.05
+225,PAPS,Basin,-2.67824998,Unmodeled Basin,1.5
+226,PARS,Hill,67.19756696,Non-Basin,0.05
+228,PFAS,Valley,-7.406167641,Unmodeled Basin,0.11
+229,PGFS,Valley,-7.838494834,Unmodeled Basin,0.65
+230,PGMS,Basin,1.033758147,Type 3 Basin,1.788
+232,PHHS,Hill,19.00169136,Non-Basin,0.05
+235,PNBS,Basin,0.414114382,Unmodeled Basin,0.75
+236,PNMS,Basin,0.152588084,Unmodeled Basin,1.2
+237,PNRS,Basin,0.092424344,Unmodeled Basin,0.75
+238,POKS,Valley,-10.65879976,Unmodeled Basin,0.28
+239,POLS,Valley,-7.040394728,Unmodeled Basin,0.4
+241,POTS,Hill,-43.1767497,Non-Basin,0.24
+242,PPHS,Basin,-0.718890612,Type 4 Basin,6.2
+244,PRPC,Basin,0.203698598,Type 4 Basin,5.28
+246,PTOS,Hill,-28.94725069,Non-Basin,0.2
+247,PUZ,Hill,38.42089736,Non-Basin,0.05
+248,PVCS,Basin,-1.907341483,Type 3 Basin,2
+249,PWES,Hill,-7.378341281,Non-Basin,0.05
+251,PXZ,Hill,-4.523671978,Non-Basin,0.05
+253,QCCS,Valley,-15.37984851,Unmodeled Basin,0.28
+255,QTPS,Valley,-16.23867927,Unmodeled Basin,1.05
+257,RCS1,Valley,-10.65493776,Type 1 Basin,1.1
+258,RCS2,Basin Edge,-3.194874968,Type 1 Basin,1
+259,RDCS,Valley,-18.43840467,Unmodeled Basin,0.5
+260,REHS,Basin,0.283407853,Type 4 Basin,4.99
+262,RHSC,Basin,0.008699384,Type 4 Basin,5.2
+269,RPZ,Hill,-45.63986304,Non-Basin,0.05
+270,RQGS,Basin,-2.691176185,Type 3 Basin,0.6
+274,SACS,Basin,0.499953191,Type 4 Basin,5.2
+276,SCAC,Basin Edge,-16.04389861,Unmodeled Basin,0.9
+277,SEAS,Hill,5.588272964,Non-Basin,0.3
+279,SEDS,Basin Edge,-2.163144146,Type 1 Basin,1
+280,SEVS,Basin,-0.909000644,Type 3 Basin,1.2
+281,SHFC,Basin,-0.386014277,Type 4 Basin,1.4
+282,SHLC,Basin,-0.063066056,Type 4 Basin,4.96
+283,SJFS,Valley,-4.978565381,Unmodeled Basin,0.17
+285,SLRC,Basin,1.003957543,Type 4 Basin,4.9
+286,SMHS,Basin,0.12890812,Type 4 Basin,5.46
+288,SNZO,Hill,-47.92049008,Non-Basin,0.05
+289,SOCS,Basin,0.331629978,Type 3 Basin,1.35
+290,SOMS,Hill,48.49465859,Non-Basin,0.05
+291,SPFS,Basin,-1.64776999,Type 4 Basin,0.7
+292,SPRS,Basin,-0.335041602,Type 4 Basin,0.69
+293,STAS,Basin,-0.608641106,Type 4 Basin,5.3
+294,STKS,Hill,28.85806526,Non-Basin,0.05
+295,SUMS,Hill,-27.17905988,Non-Basin,0.11
+296,SWNC,Basin,0.191911536,Type 4 Basin,6.68
+302,TAFS,Basin,1.926998047,Unmodeled Basin,2.7
+304,TBAS,Basin,-5.774943147,Unmodeled Basin,1
+307,TDHS,Basin,-19.07484105,Unmodeled Basin,0.21
+308,TEPS,Basin,0.965691258,Type 3 Basin,0.99
+309,TFSS,Basin,6.499874454,Type 3 Basin,1.73
+313,THZ,Hill,2.086841504,Non-Basin,0.05
+317,TLED,Basin,0.057288157,Type 4 Basin,6.3
+322,TOKS,Hill,76.02197037,Non-Basin,0.05
+323,TOTS,Basin Edge,-30.50818113,Type 3 Basin,1
+325,TPLC,Basin,0.320701523,Type 4 Basin,5.46
+328,TRMS,Hill,20.64146458,Non-Basin,0.05
+329,TRTS,Basin Edge,-3.652624015,Type 3 Basin,0.28
+331,TSZ,Hill,7.629053125,Non-Basin,0.05
+337,UHCS,Basin,-2.345955115,Type 3 Basin,2
+338,UHSS,Basin,-1.571727328,Type 3 Basin,0.9
+339,URZ,Hill,-38.39096512,Non-Basin,0.05
+342,VUWS,Basin Edge,-3.353779449,Type 3 Basin,0.87
+344,WAKC,Basin,-2.853884751,Type 1 Basin,0.8
+346,WANS,Hill,98.26544151,Non-Basin,0.05
+348,WBCS,Basin,0.038419896,Unmodeled Basin,2.8
+349,WBFS,Hill,-13.95378326,Non-Basin,0.05
+353,WCSS,Basin Edge,-17.80880884,Type 4 Basin,0.31
+355,WDAS,Valley,-2.698920835,Type 3 Basin,1.25
+356,WDFS,Valley,-0.848541261,Type 1 Basin,0.7
+357,WDPS,Basin,0.780167771,Unmodeled Basin,1.8
+358,WEL,Hill,31.04625761,Non-Basin,0.05
+359,WEMS,Basin,-4.043999015,Type 3 Basin,0.98
+361,WFSS,Basin,0.121739685,Unmodeled Basin,1
+362,WHAS,Valley,-84.04356028,Unmodeled Basin,0.15
+363,WHFS,Basin,0.287544164,Unmodeled Basin,2.4
+366,WIGC,Basin,0.614380308,Type 1 Basin,1.2
+367,WKHS,Basin,0.492546348,Unmodeled Basin,0.71
+369,WNAS,Valley,-1.377699745,Type 3 Basin,1.12
+370,WNHS,Hill,7.582397,Non-Basin,0.32
+371,WNKS,Valley,1.143537529,Unmodeled Basin,0.31
+373,WPWS,Valley,-9.379274551,Unmodeled Basin,0.4
+374,WRCS,Basin,0.124270239,Unmodeled Basin,0.66
+376,WSTS,Basin,4.642867301,Type 3 Basin,
+378,WTMC,Basin,-1.543087695,Type 1 Basin,0.58
+380,WVAS,Valley,1.207954539,Unmodeled Basin,0.6
+381,WVFS,Basin,2.940967876,Type 1 Basin,1.8
+383,WVZ,Hill,-1.49353167,Non-Basin,0.05
