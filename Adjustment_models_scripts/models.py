@@ -72,7 +72,7 @@ def _closest_coefficients_for_period(
     Examples
     --------
     >>> _closest_coefficients_for_period([0.01, 0.2 + 1e-6], 'h1')
-    (array([0.01, 0.2 ]), array([0.        , 0.00569733]))
+    (array([0.01, 0.2 ]), array([0.        , 0.00462969]))
     
     Raises
     ------
@@ -119,7 +119,7 @@ def site_adjustment_hill(period: npt.ArrayLike, h_1250: npt.ArrayLike) -> npt.Ar
     >>> site_adjustment_hill(0.1, 0)
     array(0.)
     >>> site_adjustment_hill([0.1, 0.2], -1.0)
-    array([-0.        , -0.00569733])
+    array([-0.        , -0.00462969])
     """
     _, h1 = _closest_coefficients_for_period(period, "h1")
     _, h2 = _closest_coefficients_for_period(period, "h2")
@@ -150,7 +150,7 @@ def site_adjustment_unmodeled_basin(
     Examples
     --------
     >>> site_adjustment_unmodeled_basin([0.1, 0.2, 0.5, 2.0], 1.5)
-    array([0.        , 0.        , 0.        , 0.36025334])
+    array([0.        , 0.        , 0.        , 0.35512663])
     """
     _, m1 = _closest_coefficients_for_period(period, "m1")
     _, m2 = _closest_coefficients_for_period(period, "m2")
@@ -185,7 +185,7 @@ def site_adjustment_basin_edge(period: npt.ArrayLike) -> npt.ArrayLike:
     Examples
     --------
     >>> site_adjustment_basin_edge([0.1, 0.2, 0.5, 2.0])
-    array([0.22198625, 0.32827271, 0.22368033, 0.14316994])
+    array([0.24521678, 0.34954396, 0.23779094, 0.13577952])
     """
     _, adjustment_mean = _closest_coefficients_for_period(period, 'mean')
     return adjustment_mean
@@ -229,11 +229,11 @@ def site_adjustment(
     Examples
     --------
     >>> site_adjustment(SiteClass.HILL, [0.1, 0.2], h_1250=-1.0)
-    array([-0.        , -0.00569733])
+    array([-0.        , -0.00462969])
     >>> site_adjustment(SiteClass.UNMODELED_BASIN, [0.1, 0.2, 0.5, 2.0], t0=1.5)
-    array([0.        , 0.        , 0.        , 0.36025334])
+    array([0.        , 0.        , 0.        , 0.35512663])
     >>> site_adjustment(SiteClass.BASIN_EDGE, [0.1, 0.2, 0.5, 2.0])
-    array([0.22198625, 0.32827271, 0.22368033, 0.14316994])
+    array([0.24521678, 0.34954396, 0.23779094, 0.13577952])
     >>> site_adjustment(SiteClass.BASIN, [0.1, 0.2, 0.5])
     array([0., 0., 0.])
     >>> site_adjustment(SiteClass.VALLEY, 0.1)
