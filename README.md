@@ -1,4 +1,4 @@
-# Parametric Site Adjustment Models
+# Nationwide evaluation of systematic site-to-site residuals from hybrid broadband ground-motion simulation in New Zealand
 
 This repository contains the scripts, data, and supporting materials accompanying the paper:
 “Parameterized models of systematic site effects from hybrid ground-motion simulations in New Zealand” (manuscript submitted for publication).
