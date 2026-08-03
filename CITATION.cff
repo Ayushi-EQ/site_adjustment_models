@@ -3,7 +3,8 @@
 
 cff-version: 1.2.0
 title: >-
-Nationwide evaluation of systematic site-to-site residuals from hybrid broadband ground-motion simulation in New Zealand
+Nationwide evaluation of systematic site-to-site residuals
+from hybrid broadband ground-motion simulation in New Zealand
 message: >-
   This dataset provides the required scripts and datasets
   for producing models shown in the paper and for
