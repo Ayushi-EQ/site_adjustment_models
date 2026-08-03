@@ -1,19 +1,6 @@
-# This CITATION.cff file was generated with cffinit.
-# Visit https://bit.ly/cffinit to generate yours today!
-
 cff-version: 1.2.0
-title: >-
-<<<<<<< HEAD
-  Nationwide evaluation of systematic site-to-site residuals from
-  hybrid broadband ground-motion simulation in New Zealand
-=======
-Nationwide evaluation of systematic site-to-site residuals
-from hybrid broadband ground-motion simulation in New Zealand
->>>>>>> b3f79f6d22305d64259a91b5d563bfe905f2a619
-message: >-
-  This dataset provides the required scripts and datasets
-  for producing models shown in the paper and for
-  application of these models to other regions.
+message: "If you use this repository, please cite the accompanying paper (see preferred-citation below)."
+title: "Nationwide evaluation of systematic site-to-site residuals from hybrid broadband ground-motion simulation in New Zealand"
 type: dataset
 authors:
   - given-names: Ayushi
@@ -46,42 +33,32 @@ authors:
     name-particle: Cesar
     affiliation: University of Canterbury
     orcid: 'https://orcid.org/0000-0002-0019-789X'
-abstract: >-
-  This article analyzes site-to-site residuals from
-  physics-based ground-motion simulations, which contribute
-  significantly to the uncertainty in ground-motion
-  modeling, and develops parametric site adjustment models
-  for use with these simulations. Residuals are computed for
-  5,218 ground motions from 479 small-magnitude ($3.5 \leq
-  M_W \leq 5.0$) earthquakes recorded at 212 sites across
-  New Zealand, spanning diverse site conditions.
-  Site-to-site residuals are analyzed via both geomorphic
-  categorization and other physical site characterization
-  parameters, as well as with data-driven clustering
-  methods. 
-
-  Hill site residuals exhibit the highest category standard
-  deviations, $\phi_{S2S,cat}$, at short vibration periods,
-  and sites in unmodeled sedimentary basins are the highest
-  at moderate-to-long periods. Site-to-site residuals for
-  Hill sites exhibit a statistically-significant correlation
-  with relative elevation ($H_{1250}$), while Unmodeled
-  Basin site residuals have a strong dependence on
-  fundamental site period ($T_0$). Parametric adjustment
-  models are developed for site categories with the highest
-  $\phi_{S2S,cat}$ and applied to the simulation results.
-  The resulting `hybrid' empirical-simulation predictions,
-  enabled by these parameterized models, demonstrate
-  significant improvements over the original simulation
-  results, with reductions of up to 30\% in $\phi_{S2S,cat}$
-  for Unmodeled Basin sites, 17.5\% in $\phi_{S2S,cat}$ for
-  Hill sites, and 17\% in overall site-to-site standard
-  deviation, $\phi_{S2S}$. These parametric models
-  illustrate a framework for applying posterior empirical
-  adjustments to `raw' physics-based simulation predictions,
-  and providing a benchmark for further theoretical
-  advancements that seek to explicitly represent missing
-  causal features.
+repository-code: "https://github.com/Ayushi-EQ/site_adjustment_models"
+preferred-citation:
+  type: article
+  title: "Nationwide evaluation of systematic site-to-site residuals from hybrid broadband ground-motion simulation in New Zealand"
+  authors:
+    - given-names: Ayushi
+      family-names: Tiwari
+      orcid: "https://orcid.org/0000-0002-8713-0881"
+    - given-names: Brendon
+      family-names: Bradley
+      orcid: "https://orcid.org/0000-0002-4450-314X"
+    - given-names: Christopher
+      family-names: de la Torre
+      orcid: 'https://orcid.org/0000-0002-7946-7812'
+    - given-names: Robin
+      family-names: Lee
+      orcid: "https://orcid.org/0000-0003-1033-5923"
+    - given-names: Felipe
+      family-names: Kuncar
+      orcid: "https://orcid.org/0000-0003-2779-2290"
+    - given-names: Cesar
+      family-names: Pajaro
+      orcid: 'https://orcid.org/0000-0002-0019-789X'
+  journal: "Earthquake Spectra"
+  year: 2026
+  notes: "Manuscript submitted for publication; citation details to be updated upon acceptance."
 keywords:
   - Ground motion simulation
   - site-to-site residuals
